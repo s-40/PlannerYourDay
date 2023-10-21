@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task_styles.css">
+    <title>Planner Your Day</title>
+</head>
+<body>
+    <div class="todo-list">
+        <div class="todo-header">
+            <h1>Todo List</h1>
+        </div>
+        <div class="todo-container">
+            <div class="todo-list">
+                <h2>Tasks</h2>
+                <h2> <p><span id="month"></span> 
+                    <span id="year"></span> </h2> 
+                <h3> <span id="dayOfWeek"></span> </h3>
+                <ul id="taskList">
+                    <li>
+                        <label>
+                            <input type="text" id="newTask" placeholder="Add a new task">
+                            <button onclick="addTask()">Add Task</button>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="task_scripts.js"></script>
+</body>
+</html>

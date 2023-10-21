@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.calendar {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+
+#currentMonth {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.task-input {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+#task {
+    flex: 1;
+    padding: 5px;
+}
+
+#addTask {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.task {
+    margin-top: 5px;
+    padding: 5px;
+    background: #F0F0F0;
+    border-radius: 5px;
+}
+.task-window {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1;
+    overflow: auto;
+}
+
+.task-table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#p1, #p2 {
+    text-align: center;
+}
+
+#p1Value, #p2Value {
+    font-weight: bold;
+}
